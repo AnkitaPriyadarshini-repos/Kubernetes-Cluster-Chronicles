@@ -1,0 +1,17 @@
+mongo:
+  image: mongo:latest
+  username: admin
+  password: password123
+  database: mydb
+  port: 27017
+
+mongoExpress:
+  image: mongo-express:latest
+  port: 8081
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  host: app.com
